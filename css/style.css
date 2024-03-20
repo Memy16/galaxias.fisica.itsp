@@ -12,3 +12,6 @@ h2{
 nav{
     text-decoration: none;
 }
+p{
+    margin: .625rem;
+}
