@@ -9,6 +9,9 @@ h1{
 h2{
     text-align: center;
 }
+h6{
+    color: #000;
+}
 nav{
     text-decoration: none;
 }
@@ -18,11 +21,20 @@ p{
 a{
     text-decoration: none;
 }
+img{
+    width: 50%;
+    height: 35%;
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .referencias{
     margin: 3.4375rem;
     text-decoration: none;
 }
-.grid-datos {
+.grids {
     margin: .9375rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
@@ -33,4 +45,5 @@ a{
 }
 footer{
     text-align: center;
+    background-color: #44D9E8;
 }
