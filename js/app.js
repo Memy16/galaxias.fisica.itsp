@@ -4,6 +4,9 @@ let navbarCollapse = document.querySelector('.navbar-collapse');
     navbarCollapse.classList.toggle('show');
 });
 
+import firebase from 'firebase/app';
+import 'firebase/database';
+
 const firebaseConfig = {
     apiKey: "AIzaSyB14k1XdEoqzLzRE_KY4xNB-L2ededePQc",
     authDomain: "galaxias---2do-bc---fisica.firebaseapp.com",
@@ -14,8 +17,7 @@ const firebaseConfig = {
     measurementId: "G-JWTBGMN90S",
 };
 const app = firebase.initializeApp(firebaseConfig);
-        const database = firebase.database();
-
+const database = firebase.database();
         // Escuchar el evento submit del formulario
         const commentForm = document.getElementById('commentForm');
         commentForm.addEventListener('submit', (e) => {
@@ -45,4 +47,5 @@ const app = firebase.initializeApp(firebaseConfig);
                 </div>
             `;
             commentsContainer.appendChild(card);
+            console.log('Comentario agregado:', comment);
         });
